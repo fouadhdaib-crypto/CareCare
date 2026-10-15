@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Price Comparison | CarCare</title>
+    <meta
+      name="description"
+      content="CarCare concept design: Price Comparison."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#112b36" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="index.html">CarCare</a>
+        <nav id="nav" class="nav" aria-label="Main">
+          <a href="marketplace.html">Marketplace</a
+          ><a href="price-comparison.html">Compare prices</a
+          ><a href="how-it-works.html">How it works</a
+          ><a href="index.html#garage">My garage</a
+          ><a href="search-results.html">Search parts</a
+          ><a href="login.html">Sign in</a>
+        </nav>
+        <div class="actions">
+          <a class="btn btn-light" href="cart.html"
+            >Cart <span class="badge">2</span></a
+          ><button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <noscript
+      ><div class="demo-banner">
+        Enable JavaScript to use search, your cart, and the interactive demo.
+      </div></noscript
+    >
+    <main id="main">
+      <div class="page">
+        <div class="wrap">
+          <p class="crumb"><a href="index.html">Home</a> / Price Comparison</p>
+          <div>
+            <p class="note">CarCare / Every mile</p>
+            <h1 class="ph">Price Comparison</h1>
+            <p class="lead dark">Compare the total, not just the part price.</p>
+          </div>
+          <div class="two">
+            <div class="thumb" style="height: 220px; border-radius: 16px">
+              Brake pads
+            </div>
+            <div class="card">
+              <h3>Bosch QuietCast front brake pads</h3>
+              <h2>BC1324 · Front axle set</h2>
+              <p>
+                Same manufacturer part across 3 suppliers. USD; tax calculated
+                at checkout.
+              </p>
+              <dl class="kv">
+                <dt>Deliver to</dt>
+                <dd>Austin, TX 78701</dd>
+              </dl>
+              <div class="row">
+                <button
+                  class="btn btn-blue"
+                  type="button"
+                  data-toast="Change ZIP code"
+                >
+                  Change ZIP code</button
+                ><a class="btn btn-ghost-dark" href="product-details.html"
+                  >Back to product</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="alert ok">
+            <strong>Fits your 2018 Honda Civic EX</strong>
+            <p>1.5L L4 · Front axle · Your saved vehicle is selected.</p>
+          </div>
+          <div class="alert ok">
+            <strong>MotorHub has the lowest total: $51.50</strong>
+            <p>
+              Free delivery makes this $3.48 less than AutoParts Direct and
+              $4.48 less than Prime Auto, before tax.
+            </p>
+          </div>
+          <div class="chips" data-tab>
+            <button class="chip active" type="button">Sort: Lowest total</button
+            ><button class="chip" type="button">In stock only ✓</button>
+          </div>
+          <p class="note">
+            Offers shown for quantity 1. Delivery dates are conceptual
+            estimates.
+          </p>
+          <div class="grid g3">
+            <article
+              class="card offer best"
+              style="border-color: var(--blue); background: var(--blue-tint)"
+            >
+              <h3>MotorHub</h3>
+              <p class="meta">★ 4.7 supplier rating · In stock</p>
+              <span class="tag">Best total price</span>
+              <dl class="kv">
+                <dt>Part price</dt>
+                <dd>$51.50</dd>
+                <dt>Delivery</dt>
+                <dd>Free</dd>
+                <dt>Total before tax</dt>
+                <dd><b>$51.50</b></dd>
+              </dl>
+              <p class="meta">Arrives Oct 16, 2026</p>
+              <button
+                class="btn btn-blue"
+                type="button"
+                data-toast="Choose supplier"
+              >
+                Choose supplier
+              </button>
+            </article>
+            <article class="card offer" style="">
+              <h3>AutoParts Direct</h3>
+              <p class="meta">★ 4.8 supplier rating · In stock</p>
+              <span class="tag">Fastest delivery</span>
+              <dl class="kv">
+                <dt>Part price</dt>
+                <dd>$48.99</dd>
+                <dt>Delivery</dt>
+                <dd>$5.99</dd>
+                <dt>Total before tax</dt>
+                <dd><b>$54.98</b></dd>
+              </dl>
+              <p class="meta">Arrives Oct 15, 2026</p>
+              <button
+                class="btn btn-blue"
+                type="button"
+                data-toast="Choose supplier"
+              >
+                Choose supplier
+              </button>
+            </article>
+            <article class="card offer" style="">
+              <h3>Prime Auto</h3>
+              <p class="meta">★ 4.6 supplier rating · In stock</p>
+              <span class="tag">Lowest part price</span>
+              <dl class="kv">
+                <dt>Part price</dt>
+                <dd>$46.99</dd>
+                <dt>Delivery</dt>
+                <dd>$8.99</dd>
+                <dt>Total before tax</dt>
+                <dd><b>$55.98</b></dd>
+              </dl>
+              <p class="meta">Arrives Oct 17, 2026</p>
+              <button
+                class="btn btn-blue"
+                type="button"
+                data-toast="Choose supplier"
+              >
+                Choose supplier
+              </button>
+            </article>
+          </div>
+          <article class="card">
+            <h3>How we calculate the comparison</h3>
+            <p>
+              Total before tax = listed part price + delivery cost. Prime Auto
+              has the lowest base price ($46.99), but its $8.99 shipping makes
+              its $55.98 total the highest of these offers.
+            </p>
+            <p>
+              Supplier ratings describe supplier service, not product
+              performance. Availability can change before checkout.
+            </p>
+          </article>
+          <div class="alert info">
+            <strong>Need it sooner?</strong>
+            <p>
+              AutoParts Direct offers the earliest estimated delivery, Oct 15.
+            </p>
+          </div>
+          <div class="row">
+            <button
+              class="btn btn-blue"
+              type="button"
+              data-toast="Choose AutoParts Direct"
+            >
+              Choose AutoParts Direct</button
+            ><a class="btn btn-ghost-dark" href="marketplace.html"
+              >Return to marketplace</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <p class="logo light">CarCare</p>
+          <p>The right part. The right price. Every mile.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="marketplace.html">Shop parts</a
+          ><a href="price-comparison.html">Compare prices</a
+          ><a href="about.html">About</a><a href="contact.html">Contact</a
+          ><a href="faq.html">FAQ</a>
+        </nav>
+        <nav aria-label="Workspaces">
+          <a href="supplier-overview.html">Supplier workspace</a
+          ><a href="admin-overview.html">Admin workspace</a
+          ><a href="register.html">Create account</a>
+        </nav>
+      </div>
+      <p class="wrap legal">
+        &copy; 2026 CarCare. Concept design: offers and figures are demo
+        content.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

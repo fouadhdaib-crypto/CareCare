@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CarCare | The right part. The right price. Every mile.</title>
+    <meta
+      name="description"
+      content="Find car parts that fit your vehicle, compare the full delivery cost across suppliers, and keep your maintenance history in one garage."
+    />
+    <meta name="theme-color" content="#142B4A" />
+    <meta
+      property="og:title"
+      content="CarCare | The right part. The right price."
+    />
+    <meta
+      property="og:description"
+      content="Fitment-checked parts, honest total prices and a garage that remembers your service history."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#112b36" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header" id="header">
+      <div class="wrap bar">
+        <a href="#home" class="logo" aria-label="CarCare home">CarCare</a>
+        <nav id="nav" class="nav" aria-label="Main">
+          <a href="marketplace.html">Marketplace</a>
+          <a href="price-comparison.html">Compare prices</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="#garage">My garage</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="actions">
+          <button class="btn btn-light cart" id="cartBtn" type="button">
+            Cart <span id="cartCount" class="badge">2</span>
+          </button>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <noscript
+      ><div class="demo-banner">
+        Enable JavaScript to use search, your cart, and the interactive demo.
+      </div></noscript
+    >
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="label">A little care. A better drive.</p>
+            <h1>Good parts.<br />Great prices.<br /><em>Better miles.</em></h1>
+            <p class="lead">
+              Find parts that fit, compare the complete cost and keep your car's
+              story in one place.
+            </p>
+            <div class="row">
+              <a class="btn btn-blue" href="#parts">Find your next part ↗</a>
+              <a class="btn btn-ghost" href="#garage">Explore your garage</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-top">
+              <span>THE EVERYDAY, UPGRADED</span><span>01 / CARCARE</span>
+            </div>
+            <div class="orbit"></div>
+            <img
+              class="hero-car"
+              src="assets/car.svg"
+              alt="Silver car illustration"
+            />
+            <div class="vehicle-card">
+              <span class="live-dot"></span>
+              <div>
+                <strong>Your next mile starts here.</strong
+                ><small>One place for parts, prices &amp; care.</small>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <span class="visual-caption">BUILT AROUND YOUR DRIVE</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="finder-wrap wrap">
+        <form class="finder card" id="finder" novalidate>
+          <label for="partQuery">Search parts</label>
+          <input
+            id="partQuery"
+            type="search"
+            placeholder="Search by part name, number or vehicle model"
+            autocomplete="off"
+          />
+          <label for="vehicle">Your vehicle</label>
+          <select id="vehicle">
+            <option>2018 Honda Civic EX</option>
+            <option>2020 Toyota Corolla LE</option>
+            <option>2017 Ford Focus SE</option>
+          </select>
+          <button class="btn btn-blue" type="submit">Find parts</button>
+          <p class="note" id="fitNote">
+            Demo catalog · Confirm manufacturer fitment before ordering.
+          </p>
+        </form>
+      </div>
+      <div class="brand-strip wrap">
+        <span>THE ESSENTIALS, ALL IN ONE PLACE</span><b>BOSCH</b><b>Mobil 1</b
+        ><b>NGK</b><b>ACDelco</b><span>Illustrative catalog</span>
+      </div>
+      <section class="section" aria-labelledby="whyTitle">
+        <div class="wrap">
+          <h2 id="whyTitle">Less guesswork. More confidence.</h2>
+          <div class="grid g3">
+            <article class="card">
+              <span class="icon" aria-hidden="true">&#10003;</span>
+              <h3>Fit comes first</h3>
+              <p>Shop with your year, make, model and engine selected.</p>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">$</span>
+              <h3>See the whole price</h3>
+              <p>Compare shipping and part price together, before tax.</p>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">&#9881;</span>
+              <h3>Care beyond the cart</h3>
+              <p>Keep services, mileage and reminders in one garage.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="parts" aria-labelledby="partsTitle">
+        <div class="wrap">
+          <h2 id="partsTitle">What's next for your car?</h2>
+          <div
+            class="chips"
+            id="chips"
+            role="group"
+            aria-label="Filter by category"
+          >
+            <button class="chip active" data-cat="all" type="button">
+              All
+            </button>
+            <button class="chip" data-cat="Brakes" type="button">Brakes</button>
+            <button class="chip" data-cat="Filters" type="button">
+              Filters
+            </button>
+            <button class="chip" data-cat="Fluids" type="button">Fluids</button>
+            <button class="chip" data-cat="Ignition" type="button">
+              Ignition
+            </button>
+          </div>
+          <p class="note" id="resultCount" aria-live="polite"></p>
+          <div class="grid g4" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="compare" aria-labelledby="cmpTitle">
+        <div class="wrap">
+          <h2 id="cmpTitle">A lower price isn't always a lower total.</h2>
+          <p class="lead dark">
+            Bosch QuietCast BC1324 front brake pads. Three suppliers, same part.
+            Prices in USD, before tax.
+          </p>
+          <div
+            class="chips"
+            id="sortBtns"
+            role="group"
+            aria-label="Sort offers"
+          >
+            <button class="chip active" data-sort="total" type="button">
+              Lowest total
+            </button>
+            <button class="chip" data-sort="date" type="button">
+              Fastest delivery
+            </button>
+            <button class="chip" data-sort="price" type="button">
+              Lowest part price
+            </button>
+          </div>
+          <div class="grid g3" id="offers"></div>
+        </div>
+      </section>
+
+      <section class="section alt" id="how" aria-labelledby="howTitle">
+        <div class="wrap">
+          <h2 id="howTitle">From search to service, one clear path.</h2>
+          <ol class="steps">
+            <li class="card">
+              <span class="num">1</span>
+              <h3>Add your vehicle</h3>
+              <p>
+                Select a 2018 Honda Civic EX and let fitment guide your search.
+              </p>
+            </li>
+            <li class="card">
+              <span class="num">2</span>
+              <h3>Choose your supplier</h3>
+              <p>Check ratings, stock, delivery and the complete cost.</p>
+            </li>
+            <li class="card">
+              <span class="num">3</span>
+              <h3>Keep the record</h3>
+              <p>Save your order, log the service and set the next reminder.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="garage" aria-labelledby="garageTitle">
+        <div class="wrap garage">
+          <div>
+            <h2 id="garageTitle">A garage that remembers.</h2>
+            <p class="lead dark">
+              Mileage, receipts and reminders for the car you actually drive.
+            </p>
+            <button class="btn btn-blue" id="mileageBtn" type="button">
+              Log 100 miles
+            </button>
+          </div>
+          <div class="card">
+            <h3>Alex's 2018 Honda Civic EX</h3>
+            <p class="big"><span id="miles">68,240</span> miles</p>
+            <ul class="list">
+              <li>
+                <strong>Oil change Oct 24</strong><br />Due in 12 days or at
+                70,000 miles.
+              </li>
+              <li>
+                <strong>Cabin filter replacement</strong><br />New filter
+                ordered Oct 12, #CC-10482.
+              </li>
+              <li>
+                <strong>Brake inspection Nov 10</strong><br />Review front pad
+                wear at your next service.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="faq" aria-labelledby="faqTitle">
+        <div class="wrap narrow">
+          <h2 id="faqTitle">Before you hit the road.</h2>
+          <div class="faq" id="faqList">
+            <div class="qa">
+              <button type="button" aria-expanded="false">
+                How do I know a part fits?
+              </button>
+              <p hidden>
+                Select your exact vehicle and engine. Check the fitment badge
+                and manufacturer part number before purchasing.
+              </p>
+            </div>
+            <div class="qa">
+              <button type="button" aria-expanded="false">
+                What does the comparison total include?
+              </button>
+              <p hidden>
+                The listed part price plus supplier delivery costs. Tax is shown
+                separately at checkout.
+              </p>
+            </div>
+            <div class="qa">
+              <button type="button" aria-expanded="false">
+                How do I return a part?
+              </button>
+              <p hidden>
+                Check the supplier's return policy, keep the part unused and
+                contact them before sending it back.
+              </p>
+            </div>
+            <div class="qa">
+              <button type="button" aria-expanded="false">
+                Is this a live platform?
+              </button>
+              <p hidden>
+                No. This is a concept design. Searches, purchases and messages
+                do not submit data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contactTitle">
+        <div class="wrap contact">
+          <div>
+            <h2 id="contactTitle">Make the next mile simpler.</h2>
+            <p class="lead dark">
+              A question about fitment, an order or joining as a supplier? Send
+              us a message.
+            </p>
+            <p class="note">
+              support@carcare.example<br />Monday to Friday, 9am to 6pm
+              Central.<br />Concept form: no message is sent.
+            </p>
+          </div>
+          <form class="card form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Full name *</label
+              ><input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+              /><span class="err" id="nameErr" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+              /><span class="err" id="emailErr" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic">
+                <option>Order and delivery support</option>
+                <option>Fitment question</option>
+                <option>Supplier enquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Your message *</label
+              ><textarea id="message" rows="4"></textarea
+              ><span class="err" id="messageErr" role="alert"></span>
+            </div>
+            <p class="note">Do not include card details or passwords.</p>
+            <div class="row">
+              <button class="btn btn-blue" type="submit">Send message</button
+              ><button class="btn btn-ghost-dark" type="reset" id="resetBtn">
+                Clear form
+              </button>
+            </div>
+            <p class="status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <p class="logo light">CarCare</p>
+          <p>The right part. The right price. Every mile.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#parts">Shop parts</a><a href="#compare">Compare prices</a
+          ><a href="#garage">My garage</a><a href="#faq">FAQ</a
+          ><a href="#contact">Contact</a><a href="about.html">About</a
+          ><a href="login.html">Sign in</a
+          ><a href="supplier-overview.html">Supplier workspace</a
+          ><a href="admin-overview.html">Admin workspace</a>
+        </nav>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+            >Facebook</a
+          >
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+            >Instagram</a
+          >
+          <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <p class="wrap legal">
+        &copy; 2026 CarCare. A conceptual platform design; supplier offers and
+        figures are demo content.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

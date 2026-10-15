@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Supplier Products | CarCare</title>
+    <meta
+      name="description"
+      content="CarCare concept design: Supplier Products."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#112b36" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="index.html">CarCare</a>
+        <nav id="nav" class="nav" aria-label="Main">
+          <a href="marketplace.html">Marketplace</a
+          ><a href="price-comparison.html">Compare prices</a
+          ><a href="how-it-works.html">How it works</a
+          ><a href="index.html#garage">My garage</a
+          ><a href="search-results.html">Search parts</a
+          ><a href="login.html">Sign in</a>
+        </nav>
+        <div class="actions">
+          <a class="btn btn-light" href="cart.html"
+            >Cart <span class="badge">2</span></a
+          ><button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <noscript
+      ><div class="demo-banner">
+        Enable JavaScript to use search, your cart, and the interactive demo.
+      </div></noscript
+    >
+    <main id="main">
+      <div class="ws">
+        <aside class="side">
+          <p>CarCare</p>
+          <small>Supplier workspace</small
+          ><a href="supplier-overview.html">Overview</a
+          ><a href="supplier-products.html" class="on">Products</a
+          ><a href="supplier-orders.html">Orders</a
+          ><a href="supplier-analytics.html">Analytics</a
+          ><a href="supplier-settings.html">Store settings</a
+          ><a href="faq.html">Help &amp; support</a
+          ><a href="login.html">Sign out</a>
+        </aside>
+        <div class="ws-main">
+          <div class="page">
+            <div class="wrap">
+              <p class="crumb">Supplier workspace / Product Management</p>
+              <p class="note">AutoParts Direct / Merchant center</p>
+              <div>
+                <p class="note">CarCare / Every mile</p>
+                <h1 class="ph">Product Management</h1>
+                <p class="lead dark">
+                  Manage your catalog, pricing, fitment and inventory.
+                </p>
+                <a class="btn btn-blue" href="supplier-add-product.html"
+                  >Add product</a
+                >
+              </div>
+              <div class="stats">
+                <div class="card stat">
+                  <p class="note">Published</p>
+                  <p class="v">128 products</p>
+                  <small>120 healthy / 8 restock</small>
+                </div>
+                <div class="card stat">
+                  <p class="note">Low / out of stock</p>
+                  <p class="v">8 products</p>
+                  <small>6 low · 2 unavailable</small>
+                </div>
+                <div class="card stat">
+                  <p class="note">Draft listings</p>
+                  <p class="v">3 drafts</p>
+                  <small>Complete fitment to publish</small>
+                </div>
+              </div>
+              <div class="field">
+                <label for="sp">Search products</label
+                ><input id="sp" type="text" value="" /><span
+                  class="err"
+                  role="alert"
+                ></span>
+              </div>
+              <div class="chips" data-tab>
+                <button class="chip active" type="button">
+                  Published (128)</button
+                ><button class="chip" type="button">Drafts (3)</button
+                ><button class="chip" type="button">Stock alerts (8)</button>
+              </div>
+              <div class="tblwrap">
+                <table class="tbl">
+                  <thead>
+                    <tr>
+                      <th>Product / SKU</th>
+                      <th>Price (USD)</th>
+                      <th>Stock</th>
+                      <th>Listing</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Product / SKU">
+                        Bosch QuietCast · BC1324
+                      </td>
+                      <td data-label="Price (USD)">$48.99</td>
+                      <td data-label="Stock">42 sets</td>
+                      <td data-label="Listing">Published</td>
+                      <td data-label="Action">
+                        <button
+                          class="btn btn-blue"
+                          type="button"
+                          data-toast="Edit product"
+                        >
+                          Edit product
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Product / SKU">
+                        Cabin air filter · CF11819
+                      </td>
+                      <td data-label="Price (USD)">$19.99</td>
+                      <td data-label="Stock">86 units</td>
+                      <td data-label="Listing">Published</td>
+                      <td data-label="Action">
+                        <button
+                          class="btn btn-blue"
+                          type="button"
+                          data-toast="Edit product"
+                        >
+                          Edit product
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Product / SKU">Mobil 1 oil · M1-020</td>
+                      <td data-label="Price (USD)">$29.99</td>
+                      <td data-label="Stock">64 jugs</td>
+                      <td data-label="Listing">Published</td>
+                      <td data-label="Action">
+                        <button
+                          class="btn btn-blue"
+                          type="button"
+                          data-toast="Edit product"
+                        >
+                          Edit product
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Product / SKU">Wiper pair · W24-18</td>
+                      <td data-label="Price (USD)">$24.99</td>
+                      <td data-label="Stock">4 pairs · Low</td>
+                      <td data-label="Listing">Published</td>
+                      <td data-label="Action">
+                        <button
+                          class="btn btn-blue"
+                          type="button"
+                          data-toast="Restock"
+                        >
+                          Restock
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Product / SKU">AGM battery · BAT-51R</td>
+                      <td data-label="Price (USD)">$159.99</td>
+                      <td data-label="Stock">0 units · Out</td>
+                      <td data-label="Listing">Unavailable</td>
+                      <td data-label="Action">
+                        <button
+                          class="btn btn-blue"
+                          type="button"
+                          data-toast="Restock"
+                        >
+                          Restock
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Product / SKU">Rear rotor · RR-481</td>
+                      <td data-label="Price (USD)">$42.99</td>
+                      <td data-label="Stock">18 units</td>
+                      <td data-label="Listing">Draft / fitment</td>
+                      <td data-label="Action">
+                        <button
+                          class="btn btn-blue"
+                          type="button"
+                          data-toast="Complete listing"
+                        >
+                          Complete listing
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="alert ok">
+                <strong>Fitment is required before publishing</strong>
+                <p>
+                  3 drafts need vehicle compatibility details. A product must
+                  have a manufacturer number, category, price and valid stock
+                  quantity.
+                </p>
+              </div>
+              <p class="note">
+                Concept workspace · Oct 12, 2026 · All amounts in USD
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <p class="logo light">CarCare</p>
+          <p>The right part. The right price. Every mile.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="marketplace.html">Shop parts</a
+          ><a href="price-comparison.html">Compare prices</a
+          ><a href="about.html">About</a><a href="contact.html">Contact</a
+          ><a href="faq.html">FAQ</a>
+        </nav>
+        <nav aria-label="Workspaces">
+          <a href="supplier-overview.html">Supplier workspace</a
+          ><a href="admin-overview.html">Admin workspace</a
+          ><a href="register.html">Create account</a>
+        </nav>
+      </div>
+      <p class="wrap legal">
+        &copy; 2026 CarCare. Concept design: offers and figures are demo
+        content.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
